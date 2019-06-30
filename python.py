@@ -105,62 +105,16 @@ Installing collected packages: JPype1, JayDebeApi
 Successfully installed JPype1-0.6.3 JayDebeApi-1.1.1
 (venv) vmubuntu@ubuntu:~/.virtualenvs$ 
 
+----RUN WEB APP----
+$ pip install django==1.8
+$ pip install django-cors-headers==2.1.0
+$ pip install djangorestframework==3.1.0
+$ pip install django-wkhtmltopdf==2.0.2
+$ pip install polib==1.0.7
+$ pip install django-filter==0.10.0
+$ pip install python-dateutil==2.4.2
+$ pip install suds-jurko==0.6
+$ pip install zeep==2.5.0
+$ pip install xlrd==0.9.3
 
-----SUBIR POR PRIMERA VEZ A REPOSITORIO REMOTO----
-$ git remote add origin git@github.com:detectortroyano/java-jnotify.git
-$ git pull origin master
-$ git push origin master
-
-
-#cambiarse de branch
-(INTEGR~1)
-$ git checkout -b avega
-
-
-
-
-PORT => 5433
-
-MANUAL
-mvn install:install-file -DgroupId=net.sf.jt400 -DartifactId=jt400 -Dversion=9.4 -Dpackaging=jar -Dfile=C:/lib_download/jt400.jar
-<dependency>
-        <groupId>net.sf.jt400</groupId>
-        <artifactId>jt400</artifactId>
-        <version>9.4</version>
-</dependency>
-
-MANUAL
-mvn install:install-file -DgroupId=net.sf.jt400 -DartifactId=jt400 -Dversion=9.4 -Dpackaging=jar -Dfile=C:\lib_download\jt400-9.4.jar
-<dependency>
-        <groupId>net.sf.jt400</groupId>
-        <artifactId>jt400-9.4</artifactId>
-        <version>9.4</version>
-</dependency>
-
-
-MANUAL
-mvn install:install-file -DgroupId=com.ibm.db2 -DartifactId=db2jcc4 -Dversion=unknown -Dpackaging=jar -Dfile=C:\lib_download\db2jcc4.jar
-<dependency>
-        <groupId>com.ibm.db2</groupId>
-        <artifactId>db2jcc4</artifactId>
-        <version>unknown</version>
-</dependency>
-MANUAL
-mvn install:install-file -DgroupId=com.ibm.db2 -DartifactId=db2jcc -Dversion=unknown -Dpackaging=jar -Dfile=C:\lib_download\db2jcc.jar
-<dependency>
-        <groupId>com.ibm.db2</groupId>
-        <artifactId>db2jcc</artifactId>
-        <version>unknown</version>
-</dependency>
-
-
-MAVEN
-<!-- https://mvnrepository.com/artifact/com.ibm.db2.jcc/db2jcc4 -->
-<dependency>
-    <groupId>com.ibm.db2.jcc</groupId>
-    <artifactId>db2jcc4</artifactId>
-    <version>10.1</version>
-</dependency>
-
-
-
+$ python manage.py runserver
